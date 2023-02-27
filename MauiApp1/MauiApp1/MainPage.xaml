@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Button
+                Text="Navigate to Example page"
+
+                Command="{Binding Button1ClickCommand}"
+                HorizontalOptions="Center" />
+
+            <Button
+                Text="Navigate to StandaloneViewModel"
+
+                Command="{Binding Button2ClickCommand}"
+                HorizontalOptions="Center" />
+
+            <Button
+                Text="Navigate to Standalone2ViewModel"
+
+                Command="{Binding Button3ClickCommand}"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
